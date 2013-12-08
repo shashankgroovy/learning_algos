@@ -3,7 +3,7 @@ Mergesort
 
 Key Idea
 --------
-Mergesort is a [divide and conquer]["http://en.wikipedia.org/wiki/Divide_and_conquer_algorithm"]
+Mergesort is a [divide and conquer]("http://en.wikipedia.org/wiki/Divide_and_conquer_algorithm")
 algorithm and uses comparison based sorting. It has O(n log n) runtime.
 It has two implementations :
 * Top-down implementation
@@ -20,6 +20,11 @@ This sorting method uses following concepts:
 3. Finally, repeatedly merge sublists to produce new sorted sublists until there is
    only 1 sublist remaining which will be a sorted list.
 
+>Note:
+>* The merge opertation is a time consuming and slow operation.
+ * During the merging process, a situation may arise when we run out of
+   elements in one of the lists. We must, hence stop the merging process and
+   copy rest of the elements from unfinished list into the final list.
 Running Times
 -------------
 O(n Log n)
@@ -29,5 +34,5 @@ O(n Log n)
 * Best-case performance - O(n log n) - typical and O(n) [natural
   variant][natural_variant]
 
-  [natural_variant]:[A natural merge sort is similar to a bottom up merge sort except
-  that any naturally occurring runs (sorted sequences) in the input are exploited]
+  [natural_variant]: A natural merge sort is similar to a bottom up merge sort except
+  that any naturally occurring runs (sorted sequences) in the input are exploited.
