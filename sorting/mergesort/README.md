@@ -22,17 +22,19 @@ This sorting method uses following concepts:
 
 >Note:
 >* The merge opertation is a time consuming and slow operation.
- * During the merging process, a situation may arise when we run out of
+>* Creates a new list.
+>* During the merging process, a situation may arise when we run out of
    elements in one of the lists. We must, hence stop the merging process and
    copy rest of the elements from unfinished list into the final list.
+
 Running Times
 -------------
 O(n Log n)
 
 * Worst-cast performance - O(n log n)
 * Average-case performance - O(n log n)
-* Best-case performance - O(n log n) - typical and O(n) [natural
-  variant][natural_variant]
+* Best-case performance - O(n log n) - typical and O(n)- natural
+  variant
 
-  [natural_variant]: A natural merge sort is similar to a bottom up merge sort except
+  >A natural merge sort is similar to a bottom up merge sort except
   that any naturally occurring runs (sorted sequences) in the input are exploited.
