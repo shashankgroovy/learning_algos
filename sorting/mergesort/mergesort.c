@@ -1,5 +1,5 @@
-/* This programs sorts a given list of numbers in ascending order using merge
- * sort.
+/* This programs sorts a given list of numbers in ascending order using 
+ * mergesort.
  *
  * Filename: mergesort.c
  * Author: Shashank Srivastav
