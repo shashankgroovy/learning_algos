@@ -1,4 +1,10 @@
-//Filename: QuickFindUF.java
+/**********************************************************
+* Compilation: javac QuickFindUF.java
+* Execution: java QuickFindUF
+*
+* Given n, finds if union of two numbers exist.
+*
+**********************************************************/
 
 public class QuickFindUF
 {
