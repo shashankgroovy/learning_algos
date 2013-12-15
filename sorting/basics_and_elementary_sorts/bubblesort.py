@@ -8,5 +8,5 @@ def bubblesort(arr):
     return arr
 
 if __name__=='__main__':
-    print selectionsort([8, 0, 2, 13, 5, 1, 21, 3, 1])
+    print bubblesort([8, 0, 2, 13, 5, 1, 21, 3, 1])
 
