@@ -59,6 +59,7 @@ void QuickUnionUF :: union_do(int p, int q) {
 /********************* End of class ***********************/
 
 
+
 int main() {
     QuickUnionUF q(10);
     cout << "------------- Running program ----------------\n";
