@@ -16,7 +16,10 @@ class UF
         }
     }
 
-    void union(int p, int q){}
-    boolean connected(int p, int q) {}
+    void union(int p, int q)
+    { }
+
+    boolean connected(int p, int q)
+    { return uf[p] == uf[q]; }
 }
 
