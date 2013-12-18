@@ -13,7 +13,7 @@ improvements on them were made.
 
 
 
-*Improvement 1:* Weighted
+####*Improvement 1:* Weighted####
 >##Weighted quick-union##
 *  Avoid tall trees like in quick-union algorithm.
 *  Keep track of size of each tree.
@@ -21,7 +21,7 @@ improvements on them were made.
 *  Depth of any node x is at most log<sub>2</sub> n.
 
 
-*Improvement 2:* Path Compression
+####*Improvement 2:* Path Compression####
 >##Weighted quick-union with path compression (WQUPC)##
 After computing the root of any node p, the id of each examined node is set to
 point to that root.
