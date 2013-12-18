@@ -1,4 +1,4 @@
-/*
+/**********************************************************
  * Compilation: g++ - Wall -o quickunion QuickUnionUF.cc
  * Execution: ./quickunion
  *
@@ -11,7 +11,7 @@
  * Each of the union operations just involves changing one entry in the array
  * and hence is faster than quickfind.
  *
- */
+ **********************************************************/
 
 #include <iostream>
 #include <cstdlib>

@@ -1,17 +1,17 @@
 /**********************************************************
-* Compilation: javac QuickUnionUF.java
-* Execution: java QuickUnionUF
+* Compilation: javac WeightedQU.java
+* Execution: java WeightedQU
 *
-* Given n, finds if union of two numbers exist using Quick union, a lazy
-* approach to unionfind.
+* Weighted quick-union without path compression, results in a O(log n) order of
+* growth in worst case scenario.
 *
 **********************************************************/
 
-public class QuickUnionUF 
+public class WeightedQU 
 {
     private int[] id;
 
-    public QuickUnionUF(int N)
+    public WeightedQU(int N)
     {
         // Set id of each object to itself.
         id = new int[N];
@@ -33,6 +33,12 @@ public class QuickUnionUF
         // Change root of p to point to root of q.
         int i = root(p);
         int j = root(q);
-        id[i] = j;
+        if (size[i] < size[j]) {
+            id[i] = j;
+            size[j] += size[i];
+        } else { 
+            id[j] = i;
+            size[i] += size[j];
+        }
     }
 }
