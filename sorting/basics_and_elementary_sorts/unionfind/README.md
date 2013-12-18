@@ -12,13 +12,14 @@ two algorithms can't support large dynamic connectivity problems. And thus
 improvements on them were made.
 
 
+
 >*Improvement 1:* Weighted
 ##Weighted quick-union##
 *  Avoid tall trees like in quick-union algorithm.
 *  Keep track of size of each tree.
 *  Balance by linking root of smaller tree to root of larger tree.
+*  Depth of any node x is at most log<sub>2</sub> n.
 
-Depth of any node x is at most log<sub>2</sub> n.
 
 >*Improvement 2:* Path Compression
 ##Weighted quick-union with path compression (WQUPC)##
@@ -31,6 +32,8 @@ point to that root.
 Mathematical Analysis
 =====================
 
+> Order of growth for M union-find operations on a set of N objects
+
 | **Algorithm** | **worst-case time** |
 | --------- | ---------- |
 | Quick-find |  M N  |
@@ -39,7 +42,6 @@ Mathematical Analysis
 | QU + path compression | N + M log N |
 | Weighted QU + path compression | N + M lg\* N |
 
-> Order of qrowth for M union-find operations on a set of N objects
 
 
 Union-find Applications
@@ -49,5 +51,5 @@ Union-find Applications
 *  Dynamic connectivity.
 *  Equivalence of finite state automata.
 *  [Kruskal's minimum spanning tree algorithm.]('http://en.wikipedia.org/wiki/Kruskal%27s_algorithm')
-*  In image processing - Matlab's bwlabel() function.
+*  In image processing - Matlab's `bwlabel()` function.
 *  Compiling equivalence statements in Fortran.
