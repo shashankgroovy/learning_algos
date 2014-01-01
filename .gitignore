@@ -2,3 +2,7 @@
 *.out
 *.class
 *.swp
+
+*,rar
+*.tar.gz
+
